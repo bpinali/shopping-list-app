@@ -25,17 +25,64 @@
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+
+header,
+.input-item,
+.list,
+.totals {
+    widtH: 34rem;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
 
 
 /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
+header {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 
 /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
+
+.input-item {
+    text-align: center;
+}
+
+.checkbox {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.delete,
+.budget-price,
+.actual-price {
+    float: right;
+}
+
+.budget-price,
+.actual-price {
+    width: 3.5rem;
+    margin-right: .5rem;
+}
 
 
 /* Footer styles

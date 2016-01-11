@@ -5,45 +5,51 @@
     <meta charset="UTF-8">
     <title>Shopping List</title>
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Shopping List</h1>
-    </header>
-    <section class="input"></section>
-    <section class="list">
-        <ul class="list-items">
-            <li>
-                <button class="checkbox"><i class="fa fa-check"></i></button>Bread
-                <button><i class="fa fa-trash"></i></button>
-                <input class="budget-price" type="text" value="" placeholder="1.50">
-                <input class="actual-price" type="text" value="" placeholder="2.50">
-            </li>
-            <li>
-                <button class="checkbox"><i class="fa fa-check"></i></button>Strawberry Jam
-                <button><i class="fa fa-trash"></i></button>
-                <input class="budget-price" type="text" value="" placeholder="1.50">
-                <input class="actual-price" type="text" value="" placeholder="2.50">
-            </li>
-            <li>
-                <button class="checkbox"><i class="fa fa-check"></i></button>Milk
-                <button><i class="fa fa-trash"></i></button>
-                <input class="budget-price" type="text" value="" placeholder="1.50">
-                <input class="actual-price" type="text" value="" placeholder="2.50">
-            </li>
-            <li>
-                <button class="checkbox"><i class="fa fa-check"></i></button>Donuts
-                <button><i class="fa fa-trash"></i></button>
-                <input class="budget-price" type="text" value="" placeholder="1.50">
-                <input class="actual-price" type="text" value="" placeholder="2.50">
-            </li>
-        </ul>
-    </section>
-    <section class="totals"></section>
-    <footer></footer>
+    <div class="container">
+        <header>
+            <h1>Shopping List</h1>
+        </header>
+        <section class="input-item">
+            <input class="new-item" type="text" maxlength="22" id="newItem" placeholder="Add an item…">
+        </section>
+        <section class="list">
+            <h2>Items</h2>
+            <ul class="list-items">
+                <li>
+                    <button class="checkbox"><i class="fa fa-check"></i></button>Bread
+                    <button class="delete"><i class="fa fa-trash"></i></button>
+                    <input class="budget-price" type="text" value="" placeholder="1.50" maxlength="7">
+                    <input class="actual-price" type="text" value="" placeholder="2.50">
+                </li>
+                <li>
+                    <button class="checkbox"><i class="fa fa-check"></i></button>Strawberry Jam
+                    <button class="delete"><i class="fa fa-trash"></i></button>
+                    <input class="budget-price" type="text" value="" placeholder="1.50">
+                    <input class="actual-price" type="text" value="" placeholder="2.50">
+                </li>
+                <li>
+                    <button class="checkbox"><i class="fa fa-check"></i></button>Milk
+                    <button class="delete"><i class="fa fa-trash"></i></button>
+                    <input class="budget-price" type="text" value="" placeholder="1.50">
+                    <input class="actual-price" type="text" value="" placeholder="2.50">
+                </li>
+                <li>
+                    <button class="checkbox"><i class="fa fa-check"></i></button>Donuts
+                    <button class="delete"><i class="fa fa-trash"></i></button>
+                    <input class="budget-price" type="text" value="" placeholder="1.50">
+                    <input class="actual-price" type="text" value="" placeholder="2.50">
+                </li>
+            </ul>
+        </section>
+        <section class="totals">
+            <h2>Totals</h2></section>
+        <footer></footer>
+    </div>
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
