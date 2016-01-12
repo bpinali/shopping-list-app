@@ -1,134 +1,134 @@
-/* CSS reset
+    /* CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-    box-sizing: border-box;
-    /*reset Chrome user agent styles*/
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0px;
-    -webkit-padding-after: 0px;
-    -webkit-padding-start: 0px;
-    -webkit-padding-end: 0px;
-}
-
-
-/* General styles
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+        box-sizing: border-box;
+        /*reset Chrome user agent styles*/
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-before: 0px;
+        -webkit-padding-after: 0px;
+        -webkit-padding-start: 0px;
+        -webkit-padding-end: 0px;
+    }
+    /* General styles
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #111;
-}
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #111;
+    }
 
-header,
-.input-item,
-.list,
-.totals {
-    widtH: 34rem;
-    margin: 0 auto;
-}
+    header,
+    .input-item,
+    .list,
+    .totals {
+        widtH: 34rem;
+        margin: 0 auto;
+    }
 
-ul,
-ol {
-    list-style: none;
-}
-
-
-/* Header styles
+    ul,
+    ol {
+        list-style: none;
+    }
+    /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
-header {
-    padding-top: 1.5rem;
-    text-align: center;
-}
+    header {
+        padding-top: 1.5rem;
+        text-align: center;
+    }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
-
-/* Content styles
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        letter-spacing: -0.15rem;
+    }
+    /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
 
-input.new-item {
-    padding: 10px;
-}
+    input.new-item {
+        padding: 10px;
+        width: 60%;
+    }
 
-.add-item {
-    margin-left: 7px;
-}
+    .add-item {
+        margin-left: 10px;
+    }
 
-h2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
-}
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.05rem;
+    }
 
-.input-item {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+    .input-item {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 
-input {
-    padding: 3px;
-    border: 1px solid #C0C0C0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
+    input {
+        padding: 3px;
+        border: 1px solid #C0C0C0;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
 
-.list-items {
-    line-height: 2.5rem;
-}
+    .list-items li {
+        line-height: 2.25rem;
+    }
 
-.checkbox {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    .checkbox {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-.delete,
-.budget-price,
-.actual-price {
-    float: right;
-}
+    .delete,
+    .budget-price,
+    .actual-price {
+        float: right;
+    }
 
-.budget-price,
-.actual-price {
-    width: 3.5rem;
-    margin-right: .5rem;
-}
+    .budget-price,
+    .actual-price {
+        width: 3.5rem;
+        margin-right: .7rem;
+        margin-top: .3rem;
+    }
 
-.checkbox,
-.delete,
-.add-item {
-    background-color: #fff;
-}
+    .checkbox,
+    .delete,
+    .add-item {
+        background-color: #fff;
+    }
 
-.delete {
-    margin-left: 1rem;
-}
+    .delete {
+        margin-left: 1rem;
+    }
 
-
-/* Footer styles
+    .checkbox,
+    .delete {
+        line-height: 2.25rem;
+    }
+    /* Footer styles
     (all the styles inside the < footer > tag)
 */
-
-
-/* Responsive styles
+    /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
