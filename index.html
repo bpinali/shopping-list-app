@@ -14,11 +14,18 @@
         <h1>Shopping List</h1>
     </header>
     <section class="input-item">
-        <input class="new-item" type="text" maxlength="22" id="newItem" placeholder="Add an item…">
+        <input class="new-item-input" type="text" maxlength="22" id="newItem" placeholder="Add an item…"> $
+        <input class="budget-price-input" type="text" maxlength="6" id="budgetPrice" placeholder="Budget"> $
+        <input class="actual-price-input" type="text" maxlength="6" id="actualPrice" placeholder="Actual">
         <button class="add-item"><i class="fa fa-plus fa-lg"></i></button>
     </section>
     <section class="list">
-        <h2>Items</h2>
+        <div class="table-wrapper">
+            <div class="column first">
+                <h2>Items</h2></div>
+            <div class="column second">Budget</div>
+            <div class="column third">Actual</div>
+        </div>
 
 
         <ul class="list-items">
@@ -49,7 +56,12 @@
         </ul>
     </section>
     <section class="totals">
-        <h2>Totals</h2>
+        <div class="table-wrapper">
+            <div class="column first">
+                <h2>Totals</h2></div>
+            <div class="column second">$500.00</div>
+            <div class="column third">$650.00</div>
+        </div>
     </section>
     <footer></footer>
     <script src="scripts/jquery-2.1.4.min.js"></script>

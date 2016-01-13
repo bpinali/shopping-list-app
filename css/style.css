@@ -31,8 +31,9 @@
     header,
     .input-item,
     .list,
-    .totals {
-        widtH: 34rem;
+    .totals,
+    .table-wrapper {
+        width: 34rem;
         margin: 0 auto;
     }
 
@@ -59,18 +60,45 @@
     (all the styles inside the < sections > or < aside > tags)
 */
 
-    input.new-item {
-        padding: 10px;
-        width: 60%;
+    .table-wrapper {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
-    .add-item {
-        margin-left: 10px;
+    .table-wrapper .column {
+        width: 4.2rem;
+        display: inline-block;
+    }
+
+    .table-wrapper .first {
+        width: 23rem;
+    }
+
+    .table-wrapper .second {
+        margin-right: .5rem;
+    }
+
+    input.new-item-input {
+        width: 15rem;
+    }
+
+    .new-item-input,
+    .budget-price-input,
+    .actual-price-input {
+        padding: 10px;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .budget-price-input,
+    .actual-price-input {
+        width: 5rem;
     }
 
     h2 {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         font-size: 1.5rem;
         font-weight: 600;
         letter-spacing: -0.05rem;
@@ -108,7 +136,7 @@
     .budget-price,
     .actual-price {
         width: 3.5rem;
-        margin-right: .7rem;
+        margin-right: 1.5rem;
         margin-top: .3rem;
     }
 
@@ -116,10 +144,6 @@
     .delete,
     .add-item {
         background-color: #fff;
-    }
-
-    .delete {
-        margin-left: 1rem;
     }
 
     .checkbox,
