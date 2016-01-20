@@ -14,39 +14,20 @@
         <h1>Shopping List</h1>
     </header>
     <section class="input-item">
-        <input class="new-item-input" type="text" maxlength="22" id="newItem" placeholder="Add an item…" value=""> $
-        <input class="budget-price-input" type="text" maxlength="6" id="budgetPrice" placeholder="Budget" value=""> $
-        <input class="actual-price-input" type="text" maxlength="6" id="actualPrice" placeholder="Actual" value="">
+        <input class="new-item-input" type="text" maxlength="22" id="newItem" placeholder="Add an item…" value="">
         <button class="add-item"><i class="fa fa-plus fa-lg"></i></button>
-        <button class="clear-list">Clear the list</button>
     </section>
     <section class="list">
-        <div class="table-wrapper">
-            <div class="column first">
-                <h2>Items</h2></div>
-            <div class="column second">Budget</div>
-            <div class="column third">Actual</div>
-        </div>
-
-
         <ul class="list-items">
             <li>
                 <button class="checkbox"><i class="fa fa-check"></i></button>Bread
                 <button class="delete"><i class="fa fa-times"></i></button>
-                <input class="actual-price" type="text" value="" placeholder="1.50">
-                <input class="budget-price" type="text" value="" placeholder="2.50">
             </li>
         </ul>
     </section>
-    <section class="totals">
-        <div class="table-wrapper">
-            <div class="column first">
-                <h2>Totals</h2></div>
-            <div class="column second" id="budget-total">$500.00</div>
-            <div class="column third" id="actual-total">$650.00</div>
-        </div>
-    </section>
-    <footer></footer>
+    <footer>
+        <button class="clear-list">Clear the list</button>
+    </footer>
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
