@@ -36,8 +36,6 @@ function removeItem() {
 
 }
 
-
-
 /* Function to clear the list of all items */
 function clearList() {
     $('.list-items').empty();
@@ -54,6 +52,22 @@ $(document).ready(function () {
     $('.clear-list').on('click', function () {
         clearList();
     });
+});
+
+/* Add item on pressing Enter */
+$(document).on('keypress', function (key) {
+    //keyCode == 13 is the ENTER key
+    if (key.keyCode == 13) {
+        addItem();
+    }
+});
+
+/* Clear list on pressing Delete */
+$(document).on('keypress', function (key) {
+    //keyCode == 46 is the DELETE key
+    if (key.keyCode == 46) {
+        clearList();
+    }
 });
 
 /* on click on the ".checkbox" button activate function called checkItem()  */
